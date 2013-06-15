@@ -18,6 +18,7 @@
 		94C9FEC5176C1DDD004F152F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C9FEC4176C1DDD004F152F /* Default-568h@2x.png */; };
 		94C9FEC8176C1DDD004F152F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C9FEC6176C1DDD004F152F /* MainStoryboard.storyboard */; };
 		94C9FECB176C1DDD004F152F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C9FECA176C1DDD004F152F /* ViewController.m */; };
+		94C9FED3176C1E6D004F152F /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C9FED2176C1E6D004F152F /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		94C9FEC7176C1DDD004F152F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		94C9FEC9176C1DDD004F152F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		94C9FECA176C1DDD004F152F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94C9FED1176C1E6D004F152F /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		94C9FED2176C1E6D004F152F /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				94C9FEC6176C1DDD004F152F /* MainStoryboard.storyboard */,
 				94C9FEC9176C1DDD004F152F /* ViewController.h */,
 				94C9FECA176C1DDD004F152F /* ViewController.m */,
+				94C9FED1176C1E6D004F152F /* CalculatorBrain.h */,
+				94C9FED2176C1E6D004F152F /* CalculatorBrain.m */,
 				94C9FEB5176C1DDD004F152F /* Supporting Files */,
 			);
 			path = SimpleCalculator;
@@ -176,6 +181,7 @@
 				94C9FEBB176C1DDD004F152F /* main.m in Sources */,
 				94C9FEBF176C1DDD004F152F /* AppDelegate.m in Sources */,
 				94C9FECB176C1DDD004F152F /* ViewController.m in Sources */,
+				94C9FED3176C1E6D004F152F /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +267,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleCalculator/SimpleCalculator-Prefix.pch";
 				INFOPLIST_FILE = "SimpleCalculator/SimpleCalculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +279,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleCalculator/SimpleCalculator-Prefix.pch";
 				INFOPLIST_FILE = "SimpleCalculator/SimpleCalculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
