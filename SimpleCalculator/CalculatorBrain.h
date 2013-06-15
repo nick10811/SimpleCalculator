@@ -12,6 +12,7 @@
 @interface CalculatorBrain : NSObject{
     double operand;
     
+    //like stack
     double waitingOperand;
     NSString * waitingOperation;
 }

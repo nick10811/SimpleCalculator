@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+//initial object
 -(CalculatorBrain *)brain{
     if(!brain){
         brain = [[CalculatorBrain alloc] init];
@@ -22,7 +23,7 @@
 }
 
 -(IBAction)digitPressed:(UIButton *)sender{
-    NSString * digit = [[sender titleLabel] text];
+    NSString * digit = [[sender titleLabel] text]; //the operand which is user pressed
     if(userIsInTheMiddleOfTypingANumber){
         [display setText:[[display text] stringByAppendingString:digit]];
     }

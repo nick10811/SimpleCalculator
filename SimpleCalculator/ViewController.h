@@ -11,7 +11,7 @@
 #import "CalculatorBrain.h"
 
 @interface ViewController : UIViewController{
-    CalculatorBrain* brain;
+    CalculatorBrain* brain; //implement object of CalculatorBrain
     IBOutlet UILabel* display;
     
     BOOL userIsInTheMiddleOfTypingANumber;

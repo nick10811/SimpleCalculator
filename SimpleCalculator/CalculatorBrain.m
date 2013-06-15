@@ -14,6 +14,7 @@
     operand = anOperand;
 }
 
+//current operand do operation with previous one
 -(void)performWatingOperation{
     if ([@"+" isEqual:waitingOperation]){
         operand = waitingOperand + operand;
@@ -29,6 +30,7 @@
     }
 }
 
+//perform operation and ouput result
 -(double)performOperation:(NSString*)operation{
     [self performWatingOperation];
     waitingOperation = operation;
