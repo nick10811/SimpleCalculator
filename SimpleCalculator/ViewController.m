@@ -24,8 +24,11 @@
 
 -(IBAction)digitPressed:(UIButton *)sender{
     NSString * digit = [[sender titleLabel] text]; //the operand which is user pressed
+    NSString * count = display.text; //count digit
     if(userIsInTheMiddleOfTypingANumber){
-        [display setText:[[display text] stringByAppendingString:digit]];
+        if ([count length]<10) { //limit in 10 digit
+            [display setText:[[display text] stringByAppendingString:digit]];
+        }
     }
     else{
         [display setText:digit];

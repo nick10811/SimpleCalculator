@@ -32,9 +32,14 @@
 
 //perform operation and ouput result
 -(double)performOperation:(NSString*)operation{
-    [self performWatingOperation];
-    waitingOperation = operation;
-    waitingOperand = operand;
+    if ([@"AC" isEqual:operation]) {
+        operand = 0;
+    }
+    else{
+        [self performWatingOperation];
+        waitingOperation = operation;
+        waitingOperand = operand;
+    }
     
     return operand;
 }
